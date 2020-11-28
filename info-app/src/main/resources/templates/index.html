@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Spring Session Redis Demo</title>
+</head>
+<body>
+	<p th:text="'Page views: ' + ${siteHits}">Page views here</p>
+	<p th:text="'Username: ' + ${username}">Username here</p>
+
+    <form th:action="@{http://localhost:8080/logout}" method="post">
+        <input type="submit" value="Logout"/>
+    </form>
+</body>
+</html>

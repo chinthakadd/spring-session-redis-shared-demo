@@ -1,0 +1,4 @@
+rootProject.name = 'spring-session-redis-shared-demo'
+include 'login-app'
+include 'info-app'
+
